@@ -19,9 +19,12 @@
     </a>
 </h4>
 
+---
+
 ## Table of Contents
 - [Evals](#evals) - Tools for evaluating and testing LLM applications
 - [Prompt Engineering](#prompt-engineering) - Frameworks for optimizing prompts automatically  
+- [AI Safety](#ai-safety) - Advanced techniques for protecting RAG systems
 - [Monitoring and Experiments](#monitoring-and-experiments) - Platforms for tracking experiments and model performance
 - [RAG Improvement](#rag-improvement) - Advanced techniques for enhancing RAG systems
 - [LLM Tuning](#llm-tuning) - Libraries for optimizing and quantizing models
@@ -48,6 +51,8 @@ Tools for evaluating and testing LLM applications, from basic metrics to compreh
 | Athina Evals | Python SDK with 50+ preset evaluations for LLM-generated responses | When needing quick access to diverse evaluation metrics without custom implementation | [GitHub repo](https://github.com/athina-ai/athina-evals) |
 | TruLens | Open-source ground truth evaluation for LLMs | When needing ground truth evaluation and comprehensive LLM observability | [docs](https://trulens.org/) |
 
+---
+
 ## Prompt Engineering
 Frameworks and tools for optimizing prompts automatically and building structured prompt systems.
 
@@ -57,6 +62,17 @@ Frameworks and tools for optimizing prompts automatically and building structure
 | TextGrad | Automatic differentiation via text using LLMs to backpropagate textual gradients | When optimizing text-based variables like prompts, solutions, or any textual content through gradient-like feedback | [GitHub repo](https://github.com/zou-group/textgrad) |
 | AdalFlow | PyTorch-like library to build and auto-optimize LLM workflows with auto-differentiative framework | When building LLM applications and need unified optimization for both zero-shot and few-shot prompts | [GitHub repo](https://github.com/SylphAI-Inc/AdalFlow) |
 | Quality Prompts | Implementation of 58 prompting techniques from University of Maryland research | When needing research-backed prompting techniques and structured prompt optimization methods | [GitHub repo](https://github.com/sarthakrastogi/quality-prompts) |
+
+---
+
+## AI Safety
+Advanced tools for protecting AI systems.
+
+| Name | Description | When to Use | Link |
+|------|-------------|-------------|------|
+| Rival AI | Real-time detection of malicious user queries, to protect your AI agents in production | When you need comprehensive AI safety tools for production environments: 1. Real-time attack detection using custom lightweight models and 2. Automated red teaming and benchmarking | [GitHub repo](https://github.com/sarthakrastogi/rival) |
+
+---
 
 ## Monitoring and Experiments
 Platforms for tracking experiments, monitoring model performance, and managing ML lifecycles.
@@ -68,6 +84,8 @@ Platforms for tracking experiments, monitoring model performance, and managing M
 | MLflow | Open-source platform for ML lifecycle management including experiment tracking, model packaging, and serving | When needing end-to-end ML lifecycle management with experiment tracking and model deployment | [GitHub repo](https://github.com/mlflow/mlflow) |
 | Deepchecks | Holistic solution for AI & ML validation needs, testing data and models from research to production | When needing continuous validation of ML models and data quality monitoring in production | [docs](https://docs.deepchecks.com/stable) |
 
+---
+
 ## RAG Improvement
 Advanced techniques and tools for enhancing Retrieval Augmented Generation systems.
 
@@ -76,6 +94,8 @@ Advanced techniques and tools for enhancing Retrieval Augmented Generation syste
 | GraphRAG | Structured, hierarchical approach to RAG using knowledge graphs instead of semantic search | When dealing with complex information that requires connecting disparate pieces of data or holistic understanding | [docs](https://microsoft.github.io/graphrag/) |
 | Rerankers | Lightweight, unified API for various reranking and cross-encoder models with support for multiple architectures | When improving retrieval results in RAG systems and need flexible reranking model options | [GitHub repo](https://github.com/AnswerDotAI/rerankers) |
 
+---
+
 ## Query Management
 Tools for routing requests, caching responses, and managing LLM application infrastructure.
 
@@ -83,6 +103,8 @@ Tools for routing requests, caching responses, and managing LLM application infr
 |------|-------------|-------------|------|
 | RouteLLM | Framework for cost-effective LLM routing by intelligently selecting between different models | When managing costs by routing simple queries to cheaper models and complex ones to premium models | [GitHub repo](https://github.com/lm-sys/RouteLLM) |
 | GPTCache | Semantic cache for LLM applications to reduce costs and improve response times | When building LLM applications with repeated or similar queries that can benefit from intelligent caching | [docs](https://gptcache.readthedocs.io/) |
+
+---
 
 ## AI Agent Building
 Frameworks and platforms for creating autonomous AI agents and multi-agent systems.
@@ -96,6 +118,8 @@ Frameworks and platforms for creating autonomous AI agents and multi-agent syste
 | SmolAgents | Minimal, hackable agents framework from Hugging Face with tool calling capabilities | When building lightweight agents with simple tool integration and minimal dependencies | [GitHub repo](https://github.com/huggingface/smolagents) |
 | PydanticAI | Type-safe agent framework with structured outputs and validation | When building agents that require strict type safety and structured data handling | [docs](https://ai.pydantic.dev) |
 
+---
+
 ## AI Agent Tools
 Specialized tools and services that AI agents can use to interact with external systems and data sources.
 
@@ -104,6 +128,8 @@ Specialized tools and services that AI agents can use to interact with external 
 | Browser Use | AI agent tool for automated web browsing and interaction with websites | When agents need to navigate websites, fill forms, or extract information from web pages | [docs](https://browser-use.com/) |
 | Sonar | Perplexity's search API for real-time information retrieval and web search | When agents need access to current web information and real-time search capabilities | [docs](https://sonar.perplexity.ai/) |
 | Tavily | AI-powered search API optimized for LLMs with structured, relevant results | When building RAG systems or agents that need high-quality, AI-optimized search results | [docs](https://tavily.com/) |
+
+---
 
 ## Vector Databases
 Specialized databases for storing and querying high-dimensional vector embeddings.
@@ -115,6 +141,8 @@ Specialized databases for storing and querying high-dimensional vector embedding
 | Weaviate | GraphQL-based vector database with schema management | When needing structured vector data with GraphQL queries and advanced filtering capabilities | [docs](https://weaviate.io/developers/weaviate) |
 | Qdrant | High-performance vector search engine with advanced filtering | When requiring high-performance vector search with complex filtering and payload support | [docs](https://qdrant.tech/documentation/) |
 
+---
+
 ## LLM Tuning
 Libraries and tools for optimizing and quantizing large language models for efficient deployment.
 
@@ -123,6 +151,8 @@ Libraries and tools for optimizing and quantizing large language models for effi
 | Bitsandbytes | Accessible large language models via k-bit quantization for PyTorch with 8-bit and 4-bit support | When needing to reduce memory usage of LLMs through quantization without significant performance loss | [docs](https://huggingface.co/docs/bitsandbytes/main/en/index) |
 | Optimum | Tools to optimize Transformers models for accelerated training and inference on targeted hardware | When optimizing Hugging Face models for specific hardware like GPUs, TPUs, or specialized accelerators | [GitHub repo](https://github.com/huggingface/optimum) |
 | Unsloth | Fast and memory-efficient fine-tuning of LLMs with up to 5x speedups | When fine-tuning open-source LLMs and need faster training with lower memory requirements | [docs](https://docs.unsloth.ai/) |
+
+---
 
 ## LLM Inference
 Runtime engines and servers for deploying and serving large language models efficiently.
@@ -134,6 +164,8 @@ Runtime engines and servers for deploying and serving large language models effi
 | Llama.cpp | Inference engine for LLaMA models in pure C/C++ with optimized performance | When deploying LLaMA models with minimal dependencies and maximum performance on various hardware | [GitHub repo](https://github.com/ggml-org/llama.cpp) |
 | vLLM | High-throughput and memory-efficient inference and serving engine for LLMs | When serving LLMs in production with high concurrent requests and need optimal throughput | [docs](https://docs.vllm.ai/en/latest/) |
 
+---
+
 ## Memory
 Systems for giving AI applications persistent memory and context across interactions.
 
@@ -141,3 +173,23 @@ Systems for giving AI applications persistent memory and context across interact
 |------|-------------|-------------|------|
 | Cognee | Modular tool for organizing data and improving AI agent accuracy with structured memory algorithms | When building AI agents that need to connect data points and maintain context across interactions | [docs](https://docs.cognee.ai) |
 | Mem0 | Universal, self-improving memory layer for LLM applications that enables personalized AI experiences | When building LLM applications that require persistent memory and personalization across user sessions | [docs](https://mem0.ai) |
+
+
+---
+---
+---
+
+
+## Contributing
+Contributions are welcome! If you have any ideas, improvements, or new tools to add, please create a new GitHub Issue or submit a pull request.
+
+## Support
+- [DM the creator on LinkedIn 💭](https://www.linkedin.com/in/sarthakrastogi/)
+- [GitHub Issues 🐛](https://github.com/sarthakrastogi/ai-engineering-reference/issues)
+
+## Star History
+You can **star ⭐️ this repo** to stay updated on the latest AI Engineering tools.
+
+[![Star History Chart](https://api.star-history.com/svg?repos=sarthakrastogi/ai-engineering-reference&type=Date)](https://star-history.com/#sarthakrastogi/ai-engineering-reference&Date)
+
+---
